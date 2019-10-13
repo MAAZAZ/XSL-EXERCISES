@@ -11,7 +11,6 @@
                 <style>
                     th,tr,td{
                     border: 2px solid black;
-                    width:100%;
                     text-align: center;
                     }
                 </style>
@@ -31,7 +30,7 @@
                             <xsl:value-of select="$muslim"/>
                         </td>
                         <td>
-                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='europe']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
+                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='europe']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican' or text()='Presbyterian' or text()='Christian Congregationalist' or text()='Ekalesia Niue']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
                             <xsl:value-of select="$christian"/>
                         </td>
                         <td>
@@ -46,7 +45,7 @@
                              <xsl:value-of select="$muslim"/>
                         </td>
                         <td>
-                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='africa']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
+                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='africa']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican' or text()='Presbyterian' or text()='Christian Congregationalist' or text()='Ekalesia Niue']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
                             <xsl:value-of select="$christian"/>
                         </td>
                         <td>
@@ -61,7 +60,7 @@
                             <xsl:value-of select="$muslim"/>
                         </td>
                         <td>
-                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='asia']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
+                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='asia']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican' or text()='Presbyterian' or text()='Christian Congregationalist' or text()='Ekalesia Niue']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
                             <xsl:value-of select="$christian"/>
                         </td>
                         <td>
@@ -76,7 +75,7 @@
                             <xsl:value-of select="$muslim"/>
                         </td>
                         <td>
-                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='america']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
+                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='america']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican' or text()='Presbyterian' or text()='Christian Congregationalist' or text()='Ekalesia Niue']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
                             <xsl:value-of select="$christian"/>
                         </td>
                         <td>
@@ -91,7 +90,7 @@
                             <xsl:value-of select="$muslim"/>
                         </td>
                         <td>
-                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='australia']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
+                            <xsl:variable name="christian" select="format-number(sum(//encompassed[@continent='australia']/following-sibling::religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican' or text()='Presbyterian' or text()='Christian Congregationalist' or text()='Ekalesia Niue']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
                             <xsl:value-of select="$christian"/>
                         </td>
                         <td>
@@ -107,7 +106,7 @@
                             <xsl:value-of select="$muslim" />
                         </td>
                         <td> 
-                            <xsl:variable name="christian" select="format-number(sum(//religion[text()='Christian' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican' or text()='Presbyterian']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
+                            <xsl:variable name="christian" select="format-number(sum(//religion[text()='Christian Orthodox' or text()='Christian' or text()='Roman Catholic' or text()='Protestant' or text()='Anglican' or text()='Presbyterian' or text()='Christian Congregationalist' or text()='Ekalesia Niue']/(preceding-sibling::population[1] * @percentage)) div 100,'###,###')"/>
                             <xsl:value-of select="$christian" />
                         </td>
                         <td> 
